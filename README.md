@@ -18,7 +18,9 @@ sudo nano /etc/motion/motion.conf
 sudo nano /etc/motion/camera1.conf
 sudo nano /etc/motion/camera2.conf
 
+## Start/restart service
 sudo service motion restart
+sudo rm /var/log/motion/motion.log && sudo service motion restart
 sudo service motion status
 Video files:/var/lib/motion
 
